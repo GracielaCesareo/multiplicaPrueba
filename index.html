@@ -7,13 +7,14 @@
   <title>Multiplica Prueba</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
   <div class="container">
     <h2 class="text-center">Bienvenido</h2>
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Desplegar factura</button>
       </div>
     </div>
@@ -29,13 +30,14 @@
             </button>
           </div>
           <div class="modal-body container">
-            <p class="modal-text">
+            <p>
               Para utilizar esta forma de pago primero debes validar tu identidad ingresando tu número de cuenta Telcel o RFC y el número telefónico del plan Telcel correspondiente.
             </p>
             <div class="form-check">
               <label class="form-check-label">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                 <strong>Número de cuenta Telcel</strong>
+                <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
               </label>
             </div>
             <div class="form-check">
@@ -53,18 +55,14 @@
                 <label class="form-control-label" for="formGroupExampleInput2">Número telefónico de tu Plan Telcel</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="A 10 dígitos">
               </div>
-              <div class=>
-                <button class="btn btn-block btn-sms" type="submit">Enviar clave SMS</button>
-                <p class="text-center">Recibirás una clave SMS para validar tu identidad.</p>
-              </div>
+              <button class="btn btn-block btn-sms" type="submit">Enviar clave SMS</button>
+              <p class="text-center identidad">Recibirás una clave SMS para validar tu identidad.</p>
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
