@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiplica Prueba</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="text-center">Bienvenido</h2>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Desplegar factura</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content container">
+          <div class="modal-header">
+            <h5 class="text-center">Pago con cargo a Factura Telcel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body container">
+            <p class="modal-text">
+              Para utilizar esta forma de pago primero debes validar tu identidad ingresando tu número de cuenta Telcel o RFC y el número telefónico del plan Telcel correspondiente.
+            </p>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <strong>Número de cuenta Telcel</strong>
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <strong>RFC</strong>
+              </label>
+            </div>
+            <form>
+              <div class="form-group">
+                <label class="form-control-label" for="formGroupExampleInput"></label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="9 dígitos">
+              </div>
+              <div class="form-group">
+                <label class="form-control-label" for="formGroupExampleInput2">Número telefónico de tu Plan Telcel</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="A 10 dígitos">
+              </div>
+              <div class=>
+                <button class="btn btn-block btn-sms" type="submit">Enviar clave SMS</button>
+                <p class="text-center">Recibirás una clave SMS para validar tu identidad.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="assets/js/app.js" charset="utf-8"></script>
+
+</body>
+</html>

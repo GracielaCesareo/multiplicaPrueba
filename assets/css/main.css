@@ -1,0 +1,14 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.modal-header h5{
+  margin-left: 20%;
+}
+.btn-sms{
+  background-color: #FF6600;
+  color: #FFF;
+  border-bottom: 4px solid rgb(193, 78, 43);
+}
+.modal-text{
+  font-size: 15px;
+}
